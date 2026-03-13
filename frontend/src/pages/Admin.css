@@ -84,8 +84,8 @@
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: var(--brand-yellow);
-    box-shadow: 0 0 0 3px rgba(255, 233, 32, 0.15);
+    border-color: var(--brand-purple);
+    box-shadow: 0 0 0 3px rgba(113, 51, 100, 0.1);
 }
 
 .upload-zone {
@@ -99,8 +99,9 @@
 }
 
 .upload-zone:hover {
-    border-color: var(--brand-yellow);
-    background: var(--brand-yellow-pale);
+    border-color: var(--brand-purple);
+    background: var(--brand-purple-pale);
+    color: var(--brand-purple);
 }
 
 .upload-zone p {
@@ -143,9 +144,9 @@
 .table-tabs {
     display: flex;
     gap: 0.25rem;
-    background: var(--grey-100);
+    background: var(--brand-purple-pale);
     border-radius: var(--radius-md);
-    padding: 3px;
+    padding: 4px;
 }
 
 .table-tab {
@@ -158,9 +159,9 @@
 }
 
 .table-tab.active {
-    background: var(--bg-card);
-    color: var(--text-primary);
-    font-weight: 600;
+    background: var(--brand-purple);
+    color: var(--brand-white);
+    font-weight: 700;
     box-shadow: var(--shadow-sm);
 }
 
@@ -206,8 +207,8 @@ th {
 }
 
 .status-pending {
-    background: var(--brand-yellow-pale);
-    color: #8B6914;
+    background: var(--brand-yellow);
+    color: var(--brand-black);
 }
 
 .status-draft {
@@ -228,8 +229,8 @@ th {
 }
 
 .table-actions .btn-icon:hover {
-    background: var(--grey-100);
-    color: var(--text-primary);
+    background: var(--brand-purple-pale);
+    color: var(--brand-purple);
 }
 
 .delete-btn:hover {

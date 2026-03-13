@@ -19,7 +19,8 @@
 }
 
 .text-brand {
-    color: var(--brand-blue);
+    color: var(--brand-purple);
+    font-weight: 800;
 }
 
 .page-subtitle {
@@ -54,8 +55,8 @@
 }
 
 .search-box input:focus {
-    border-color: var(--brand-blue);
-    box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.2);
+    border-color: var(--brand-purple);
+    box-shadow: 0 0 0 3px rgba(113, 51, 100, 0.1);
     outline: none;
 }
 
@@ -82,10 +83,10 @@
 }
 
 .venue-icon {
-    background: var(--bg-primary);
+    background: var(--brand-purple-pale);
     padding: 10px;
     border-radius: 50%;
-    color: var(--brand-blue);
+    color: var(--brand-purple);
     flex-shrink: 0;
 }
 

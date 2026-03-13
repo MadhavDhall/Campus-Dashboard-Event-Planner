@@ -135,17 +135,17 @@ const Admin = () => {
 
     if (authLoading) {
         return (
-            <div className="admin-page flex-center" style={{ paddingTop: '72px', minHeight: '100vh', background: 'var(--bg-secondary)' }}>
-                <Loader className="spin" size={32} color="var(--primary)" />
+            <div className="admin-page flex-center" style={{ paddingTop: '80px', minHeight: '100vh', background: 'var(--brand-purple-pale)' }}>
+                <Loader className="spin" size={32} color="var(--brand-purple)" />
             </div>
         );
     }
 
     if (!user) {
         return (
-            <div className="admin-page flex-center" style={{ paddingTop: '72px', minHeight: '100vh', background: 'var(--bg-secondary)' }}>
+            <div className="admin-page flex-center" style={{ paddingTop: '80px', minHeight: '100vh', background: 'var(--brand-purple-pale)' }}>
                 <div className="card text-center" style={{ padding: '3rem', maxWidth: '400px' }}>
-                    <ShieldAlert size={48} color="var(--primary)" style={{ margin: '0 auto 1rem' }} />
+                    <ShieldAlert size={48} color="var(--brand-purple)" style={{ margin: '0 auto 1rem' }} />
                     <h2>Admin Access Required</h2>
                     <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>Please log in to access the Club Admin panel.</p>
                 </div>
@@ -155,7 +155,7 @@ const Admin = () => {
 
     if (!isAdmin) {
         return (
-            <div className="admin-page flex-center" style={{ paddingTop: '72px', minHeight: '100vh', background: 'var(--bg-secondary)' }}>
+            <div className="admin-page flex-center" style={{ paddingTop: '80px', minHeight: '100vh', background: 'var(--brand-purple-pale)' }}>
                 <div className="card text-center" style={{ padding: '3rem', maxWidth: '400px' }}>
                     <ShieldAlert size={48} color="var(--red)" style={{ margin: '0 auto 1rem' }} />
                     <h2>Access Denied</h2>
@@ -167,7 +167,7 @@ const Admin = () => {
     }
 
     return (
-        <div className="admin-page" style={{ paddingTop: '72px', minHeight: '100vh', background: 'var(--bg-secondary)' }}>
+        <div className="admin-page" style={{ paddingTop: '80px', minHeight: '100vh', background: 'var(--brand-purple-pale)' }}>
             <div className="container">
                 <div className="admin-header">
                     <div>
@@ -184,7 +184,7 @@ const Admin = () => {
                 <div className="stats-grid grid-4 stagger">
                     {/* Stats Removed/Reduced to keep it strict. Backend doesn't provide these counts directly yet. */}
                     <div className="stat-card card animate-fade-in">
-                        <div className="stat-icon" style={{ background: '#667eea15', color: '#667eea' }}>
+                        <div className="stat-icon" style={{ background: 'rgba(113, 51, 100, 0.1)', color: 'var(--brand-purple)' }}>
                             <Calendar size={24} />
                         </div>
                         <div>
@@ -207,7 +207,7 @@ const Admin = () => {
                             <div style={{ overflowX: 'auto' }}>
                                 <table className="admin-table" style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
                                     <thead>
-                                        <tr style={{ borderBottom: '1px solid var(--grey-200)', background: 'var(--bg-secondary)' }}>
+                                        <tr style={{ borderBottom: '1px solid var(--grey-200)', background: 'var(--brand-purple-pale)' }}>
                                             <th style={{ padding: '1rem', fontWeight: 600 }}>Event Name</th>
                                             <th style={{ padding: '1rem', fontWeight: 600 }}>Club</th>
                                             <th style={{ padding: '1rem', fontWeight: 600 }}>Date & Time</th>

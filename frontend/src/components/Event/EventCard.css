@@ -60,11 +60,11 @@
 
 .event-action:hover {
     background: white;
-    color: var(--brand-accent);
+    color: var(--brand-purple);
 }
 
 .event-action.active {
-    color: var(--brand-accent);
+    color: var(--brand-purple);
     background: white;
 }
 
@@ -113,8 +113,8 @@
 
 .event-club {
     font-size: 0.85rem;
-    color: var(--brand-blue);
-    font-weight: 500;
+    color: var(--brand-purple);
+    font-weight: 600;
     margin-bottom: var(--space-md);
 }
 
@@ -202,8 +202,8 @@
 }
 
 .compact-club {
-    color: var(--brand-blue);
-    font-weight: 500;
+    color: var(--brand-purple);
+    font-weight: 600;
 }
 
 .compact-venue {
@@ -235,7 +235,7 @@
 }
 
 .btn-icon-sm:hover {
-    color: var(--brand-accent);
-    background: var(--bg-secondary);
+    color: var(--brand-purple);
+    background: var(--brand-purple-pale);
     border-radius: 50%;
 }

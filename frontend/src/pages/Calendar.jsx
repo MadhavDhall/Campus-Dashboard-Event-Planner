@@ -4,12 +4,12 @@ import eventService from '../services/events';
 import './Calendar.css';
 
 const categoryDots = {
-    Technical: '#667eea',
-    Cultural: '#f5576c',
-    Sports: '#4facfe',
-    Academic: '#f0c040',
-    Fest: '#ef4444',
-    General: '#999',
+    Technical: '#713364', // Purple
+    Cultural: '#e91e63', // Pinkish
+    Sports: '#ff9800', // Orange
+    Academic: '#FFD700', // Gold/Yellow
+    Fest: '#f44336', // Red
+    General: '#607d8b', // Blue-Grey
 };
 
 const daysInMonth = (month, year) => new Date(year, month + 1, 0).getDate();
@@ -87,7 +87,7 @@ const CalendarPage = () => {
             <div className="container">
                 <div className="map-page-header">
                     <h1 className="page-title">
-                        <CalIcon size={28} style={{ color: 'var(--brand-accent)' }} />
+                        <CalIcon size={28} style={{ color: 'var(--brand-purple)' }} />
                         Event Calendar
                     </h1>
                     <p className="page-subtitle">Keep track of all upcoming events and important dates</p>

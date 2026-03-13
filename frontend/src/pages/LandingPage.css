@@ -5,11 +5,10 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Pushes footer to the bottom */
+    justify-content: space-between;
     align-items: center;
-    background-color: #ffffff; /* White background as requested */
+    background-color: var(--brand-white);
     padding: 2rem;
-    font-family: 'Roboto', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 .landing-content {
@@ -17,20 +16,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 1; /* Take up remaining space */
+    flex: 1;
     width: 100%;
     max-width: 600px;
-    gap: 3rem; /* Space between title, logo, and buttons */
+    gap: 3rem;
     padding-top: 2rem;
 }
 
 .landing-title {
-    color: #000000;
+    color: var(--brand-black);
     font-size: 2.2rem;
-    font-weight: 800;
+    font-weight: 900;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.02em;
     margin: 0;
 }
 
@@ -42,9 +41,10 @@
 }
 
 .landing-iitr-logo {
-    max-width: 250px; /* Adjust size as needed */
+    max-width: 280px;
     height: auto;
     object-fit: contain;
+    filter: drop-shadow(0 10px 15px rgba(113, 51, 100, 0.1));
 }
 
 .landing-buttons {
@@ -52,37 +52,37 @@
     flex-direction: column;
     gap: 1.2rem;
     width: 100%;
-    max-width: 320px; /* Keep buttons structured */
+    max-width: 340px;
 }
 
 .landing-btn-student {
-    background-color: #713364 !important; /* The requested Purple */
-    color: #ffffff !important;
+    background-color: var(--brand-purple) !important;
+    color: var(--brand-white) !important;
     border: none;
-    padding: 1rem 2rem;
+    padding: 1.1rem 2rem;
     font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 12px;
-    transition: all 0.3s ease;
+    font-weight: 700;
+    border-radius: 14px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
-    box-shadow: 0 4px 14px rgba(113, 51, 100, 0.2);
+    box-shadow: var(--shadow-md);
 }
 
 .landing-btn-student:hover {
-    background-color: #5c2851 !important;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(113, 51, 100, 0.3);
+    background-color: var(--brand-purple-dark) !important;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
 }
 
 .landing-btn-admin {
     background-color: transparent !important;
-    color: #000000 !important;
-    border: 2px solid #000000;
+    color: var(--brand-black) !important;
+    border: 2px solid var(--brand-black);
     padding: 1rem 2rem;
     font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 12px;
-    transition: all 0.3s ease;
+    font-weight: 700;
+    border-radius: 14px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
     text-decoration: none;
     display: inline-block;
@@ -90,8 +90,9 @@
 }
 
 .landing-btn-admin:hover {
-    background-color: #000000 !important;
-    color: #ffffff !important;
+    background-color: var(--brand-black) !important;
+    color: var(--brand-white) !important;
+    transform: translateY(-2px);
 }
 
 /* --- Footer --- */
